@@ -62,7 +62,7 @@ in
 buildRubyGem rec {
   name = "${gemName}-${version}";
   gemName = "vagrant";
-  inherit version;
+  inherit ruby version;
 
   doInstallCheck = true;
   dontBuild = false;
